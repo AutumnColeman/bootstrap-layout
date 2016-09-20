@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
+  font-family: 'Bitter', serif;
+}
+
+a {
+  color: black;
+}
+
+#header {
+  background-color: #748e71;
+}
+
+img.logo {
+  width: 250px;
+  height: 150px;
+}
+
+@media (max-width: 1000px) {
+  img.logo, .navbar.cf {
+    float: none;
+    padding-top: 5px;
+    display: inline-block;
+  }
+  #header, .navbar.cf {
+    text-align: center;
+    font-weight: bold;
+  }
+  .navbar.cf ul {
+    float: none;
+  }
+}
+.btn-group {
+  display: none;
+}
+p {
+  margin: 9px 16px;
+}
+
+@media (max-width: 750px) {
+  img.logo {
+    float: none;
+    padding-top: 5px;
+    display: inline-block;
+  }
+  .navbar.cf {
+    display: none;
+  }
+  .small-menu, .btn-group {
+    display: inline-block;
+    text-align: center;
+  }
+  .btn-default {
+    background-color: #748e71;
+    border: 0;
+    color: black;
+  }
+  .btn-default:hover {
+    background-color: #748e71;
+    color: #000;
+  }
+  p {
+    margin: 9px 16px;
+  }
+  .dropdown.cf {
+    text-align: center;
+  }
+}
+
+#banner {
+  text-align: center;
+  padding: 150px 0;
+  background-color: #184413;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 43%;
+}
+
+.profile {
+  padding: 50px 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.footer {
+    background-color: #748e71;
+}
+.address {
+  text-align: left;
+  color: black;
+  font-family: Arial, sans-serif;
+  padding: 13px;
+}
+
+.contact {
+  text-align: right;
+  color: black;
+  font-family: Arial, sans-serif;
+  padding: 13px;
+}
+
+.navbar {
+  float: right;
+  color: black;
+  padding: 17px 17px;
+}
+
+.navbar ul {
+  text-decoration: none;
+  margin: 0;
+  float: left;
+}
+
+.navbar li {
+  list-style: none;
+  float: left;
+  padding: 19px;
+}
+
+.navbar li a {
+  color: black;
+  text-decoration: none;
+  padding: 19px;
+  display: block;
+  font-size: 120%;
+  background-color: #222222;
+}
+.dropdown-menu {
+  background-color: #d0d9cf;
+  color: #000;
+}
